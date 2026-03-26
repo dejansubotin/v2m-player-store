@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>V2M Player Support</title>
+  <style>
+    :root {
+      --bg: #f6f4ef;
+      --panel: #ffffff;
+      --text: #17130f;
+      --muted: #5c544c;
+      --line: rgba(23, 19, 15, 0.12);
+      --accent: #165f72;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Avenir Next", Avenir, "Helvetica Neue", Helvetica, sans-serif;
+      color: var(--text);
+      background: linear-gradient(180deg, #fbfaf7, var(--bg));
+    }
+
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 56px 24px 96px;
+    }
+
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 34px;
+      box-shadow: 0 22px 64px rgba(19, 14, 10, 0.06);
+    }
+
+    h1, h2 {
+      letter-spacing: -0.03em;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(36px, 6vw, 56px);
+    }
+
+    h2 {
+      margin: 30px 0 10px;
+      font-size: 22px;
+    }
+
+    p, li {
+      color: var(--muted);
+      font-size: 17px;
+      line-height: 1.65;
+    }
+
+    ul {
+      margin: 10px 0 0;
+      padding-left: 20px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .home {
+      display: inline-block;
+      margin-bottom: 24px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="home" href="../">Back to V2M Player</a>
+    <section class="panel">
+      <h1>Support</h1>
+      <p>
+        V2M Player is a lightweight macOS player for <code>.v2m</code> music files.
+        If you run into an issue, the checks below cover the most common cases.
+      </p>
+
+      <h2>Basic Usage</h2>
+      <ul>
+        <li>Double-click a <code>.v2m</code> file in Finder to open it in V2M Player.</li>
+        <li>Drag one or more <code>.v2m</code> files into the app to build a playlist.</li>
+        <li>Use shuffle, repeat, previous, next, and HQ mode controls during playback.</li>
+      </ul>
+
+      <h2>Troubleshooting</h2>
+      <ul>
+        <li>If a file does not open, confirm that the extension is <code>.v2m</code>.</li>
+        <li>If Finder still shows an outdated icon after updating the app, restart Finder once.</li>
+        <li>If playback sounds wrong, toggle HQ mode and relaunch the app.</li>
+      </ul>
+
+      <h2>Support Contact</h2>
+      <p>
+        For bug reports or playback issues, open an issue on GitHub:
+        <a href="https://github.com/dejansubotin/v2m-player-store/issues">github.com/dejansubotin/v2m-player-store/issues</a>
+      </p>
+    </section>
+  </main>
+</body>
+</html>

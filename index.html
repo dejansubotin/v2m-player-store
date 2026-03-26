@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>V2M Player</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f5f1e8;
+      --panel: rgba(255, 255, 255, 0.82);
+      --text: #17130f;
+      --muted: #5e564e;
+      --line: rgba(23, 19, 15, 0.12);
+      --accent: #c86b32;
+      --accent-dark: #8f451d;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Avenir Next", Avenir, "Helvetica Neue", Helvetica, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(200, 107, 50, 0.18), transparent 30%),
+        radial-gradient(circle at bottom right, rgba(38, 88, 120, 0.14), transparent 34%),
+        linear-gradient(160deg, #efe7db, var(--bg));
+      min-height: 100vh;
+    }
+
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 72px 24px 96px;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: 40px;
+      box-shadow: 0 24px 80px rgba(38, 30, 21, 0.08);
+      backdrop-filter: blur(18px);
+    }
+
+    .eyebrow {
+      margin: 0 0 14px;
+      color: var(--accent-dark);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0 0 14px;
+      font-size: clamp(40px, 7vw, 68px);
+      line-height: 0.95;
+      letter-spacing: -0.04em;
+    }
+
+    p {
+      margin: 0 0 18px;
+      max-width: 620px;
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 34px;
+    }
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 180px;
+      padding: 15px 20px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: transform 140ms ease, background 140ms ease, border-color 140ms ease;
+    }
+
+    a.primary {
+      color: #fff;
+      background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+      box-shadow: 0 14px 28px rgba(200, 107, 50, 0.24);
+    }
+
+    a.secondary {
+      color: var(--text);
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.72);
+    }
+
+    a:hover {
+      transform: translateY(-1px);
+    }
+
+    .notes {
+      margin-top: 44px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+      display: grid;
+      gap: 12px;
+    }
+
+    .notes div {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="card">
+      <p class="eyebrow">farbrausch v2 player</p>
+      <h1>Play original V2M tracks on macOS.</h1>
+      <p>
+        V2M Player is a native macOS app for opening and playing farbrausch V2M music files.
+        It supports drag and drop loading, playlists, shuffle and repeat, and an optional
+        high-quality output mode.
+      </p>
+      <div class="links">
+        <a class="primary" href="./support/">Support</a>
+        <a class="secondary" href="./privacy/">Privacy Policy</a>
+      </div>
+      <div class="notes">
+        <div>No account is required. Playback works locally on your Mac.</div>
+        <div>File access is limited to the files you explicitly open or drop into the app.</div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
